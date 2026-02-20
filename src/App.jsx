@@ -3,6 +3,7 @@ import Conter from "./component/conter";
 import Object from "./component/object";
 import Rerender from "./component/useEffect/useEffects1"
 import Example from "./component/useEffect/useEffect2";
+import ComponentA from "./useContext/componentA";
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Object />
       <Rerender/>
       <Example/>
+      <ComponentA/>
     </div>
   );
 }
