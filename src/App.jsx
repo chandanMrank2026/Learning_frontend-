@@ -1,16 +1,22 @@
 import React from "react";
 import Conter from "./component/conter";
 import Object from "./component/object";
+import Rerender from "./component/useEffect/useEffects1"
+import Example from "./component/useEffect/useEffect2";
 
 
-const App = () => {
+
+
+function App() {
   return (
     <div>
       <h1>Hello</h1>
       <Conter />
-       <Object/> 
+      <Object />
+      <Rerender/>
+      <Example/>
     </div>
   );
-};
+}
 
 export default App;

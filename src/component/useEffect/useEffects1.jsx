@@ -1,21 +1,22 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 //useEffect without dependencies
-const hook2 = () => {
-  const [count, Setcount] = useState("0");
- 
+const Rerender = () => {
+  const [count, setcount] = useState(0);
+    //callack function,[]//
   useEffect(() => {
     document.title = `${count} new message!`;
-  });
+    
+  },);
   return (
     <>
       <div>useEffects</div>
       <button onClick={
-        ()=>Setcount(count+1)
+        ()=>setcount(count+1)
 
       }>Increase</button>
     </>
   );
 };
 
-export default hook2;
+export default Rerender;

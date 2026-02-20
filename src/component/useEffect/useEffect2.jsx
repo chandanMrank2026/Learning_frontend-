@@ -1,0 +1,31 @@
+import { useState, useEffect } from "react";
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // 1️⃣ No dependency array
+  useEffect(() => {
+    console.log("1️ Runs on EVERY render chandan");
+  });
+
+  // 2️⃣ Empty dependency array
+  useEffect(() => {
+    console.log("2️ Runs ONLY on mount chandan2");
+  }, []);
+
+  // 3️⃣ With dependency
+  useEffect(() => {
+    console.log("3️ Runs when count changes chandan3");
+  }, [count]);
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+
+export default Example;
