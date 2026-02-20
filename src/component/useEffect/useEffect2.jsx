@@ -3,17 +3,17 @@ import { useState, useEffect } from "react";
 function Example() {
   const [count, setCount] = useState(0);
 
-  // 1️⃣ No dependency array
+  // 1️No dependency array
   useEffect(() => {
     console.log("1️ Runs on EVERY render chandan");
   });
 
-  // 2️⃣ Empty dependency array
+  // 2️Empty dependency array
   useEffect(() => {
     console.log("2️ Runs ONLY on mount chandan2");
   }, []);
 
-  // 3️⃣ With dependency
+  // 3️ With dependency
   useEffect(() => {
     console.log("3️ Runs when count changes chandan3");
   }, [count]);
