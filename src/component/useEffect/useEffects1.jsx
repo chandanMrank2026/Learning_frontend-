@@ -7,7 +7,7 @@ const Rerender = () => {
   useEffect(() => {
     document.title = `${count} new message!`;
     
-  },);
+  });
   return (
     <>
       <div>useEffects</div>
